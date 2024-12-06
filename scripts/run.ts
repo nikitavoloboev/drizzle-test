@@ -9,7 +9,6 @@ async function main() {
   // await db.insert(lastClonesWindow).values({
   //   name: "main.ts -- drizzle",
   // })
-
   // const result = await db.select().from(lastClonesWindow)
   // console.log(result)
 }
