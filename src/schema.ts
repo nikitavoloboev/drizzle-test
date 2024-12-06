@@ -1,8 +1,6 @@
 import { int, sqliteTable, text } from "drizzle-orm/sqlite-core"
 
-export const usersTable = sqliteTable("users_table", {
+export const lastClonesWindow = sqliteTable("last_clones_active_window", {
   id: int().primaryKey({ autoIncrement: true }),
-  name: text().notNull(),
-  age: int().notNull(),
-  email: text().notNull().unique(),
+  name: text().notNull(), // name of window that was last active
 })

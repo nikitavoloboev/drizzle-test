@@ -18,5 +18,4 @@ private.*
 private-*
 past.*
 past-*
-scripts/run.ts
 *.bike

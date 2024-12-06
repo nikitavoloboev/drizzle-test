@@ -3,7 +3,8 @@
   "type": "module",
   "scripts": {
     "dev": "bun --watch src/main.ts",
-    "ts": "bun --watch scripts/run.ts"
+    "s": "bun --watch scripts/run.ts",
+    "sr": "bun --watch scripts/private-run.ts"
   },
   "devDependencies": {
     "@types/bun": "^1.1.14",
