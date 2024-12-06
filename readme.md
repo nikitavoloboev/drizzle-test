@@ -6,6 +6,8 @@ As per [drizzle docs](https://orm.drizzle.team/docs/get-started/sqlite-new), hav
 DB_FILE_NAME=file:../db/drizzle.db
 ```
 
+Then:
+
 ```
 bun i
 ```
