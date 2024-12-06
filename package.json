@@ -1,0 +1,23 @@
+{
+  "name": "ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/main.ts",
+    "ts": "bun --watch scripts/run.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.14",
+    "drizzle-kit": "^0.29.1",
+    "tsx": "^4.19.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "drizzle-orm": "^0.37.0"
+  }
+}
