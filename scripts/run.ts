@@ -7,7 +7,7 @@ async function main() {
 
   await clearLastClonesWindowTable()
   await db.insert(lastClonesWindow).values({
-    name: "main.ts -- drizzle v2",
+    name: "main.ts -- drizzle",
   })
   const result = await db.select().from(lastClonesWindow)
   console.log(result)
