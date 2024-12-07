@@ -5,12 +5,12 @@ import { lastClonesWindow } from "../src/schema"
 async function main() {
   const db = drizzle(process.env.DB_FILE_NAME!)
 
-  // await clearLastClonesWindowTable()
-  // await db.insert(lastClonesWindow).values({
-  //   name: "main.ts -- drizzle",
-  // })
-  // const result = await db.select().from(lastClonesWindow)
-  // console.log(result)
+  await clearLastClonesWindowTable()
+  await db.insert(lastClonesWindow).values({
+    name: "main.ts -- drizzle v2",
+  })
+  const result = await db.select().from(lastClonesWindow)
+  console.log(result)
 }
 
 async function clearLastClonesWindowTable() {
