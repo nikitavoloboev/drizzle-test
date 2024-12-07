@@ -1,6 +1,6 @@
 ## Setup
 
-As per [drizzle docs](https://orm.drizzle.team/docs/get-started/sqlite-new), have this `.env`:
+Need this `.env`:
 
 ```
 DB_FILE_NAME=file:../db/drizzle.db
@@ -16,4 +16,14 @@ bun i
 
 ```
 bun dev
+```
+
+To run [scripts/run.ts](scripts/run.ts).
+
+## Make changes to schema
+
+Edit [src/schema.ts](src/schema.ts), then:
+
+```
+bunx drizzle-kit generate && bunx drizzle-kit migrate
 ```
